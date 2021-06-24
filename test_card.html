@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang=en >
+
+<head>
+
+  <meta charset=UTF-8>
+  
+<link rel=apple-touch-icon type=image/png href=https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png />
+<meta name=apple-mobile-web-app-title content=CodePen>
+
+<link rel=shortcut icon type=image/x-icon href=https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico />
+
+<link rel=mask-icon type= href=https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg color=#111 />
+
+
+  <title>CodePen - Article Deck</title>
+  
+  <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css>
+
+  
+  
+<style>
+@import url(https://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans&amp;display=swap);
+/* body {
+  background: #F9F9F9;
+  color: #495456;
+  margin: 72px;
+  font-family: Open Sans, sans-serif;
+} */
+
+h2 {
+  font-family: Arbutus Slab, serif;
+  font-weight: normal;
+  color: #000;
+  line-height: 1.25;
+}
+
+p {
+  position: absolute;
+  bottom: 0;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-gap: 48px;
+  margin: 0 auto;
+}
+
+.card {
+  cursor: pointer;
+  position: relative;
+  height: 0;
+  padding-bottom: 120%;
+  --offset-multiplier: 4px;
+  transition: transform 0.6s ease;
+  --translate: 0;
+  transform: translate(var(--translate), var(--translate));
+}
+.card:hover {
+  --offset-multiplier: 6px;
+  --translate: calc(-1px * (var(--cards) - 1));
+  transition: transform 0.3s ease;
+}
+
+.child {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px -4px 8px rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
+  transition: inherit;
+  --translate: calc(var(--offset) * var(--offset-multiplier));
+  transform: translate(var(--translate), var(--translate));
+  z-index: 5;
+}
+.child:nth-child(1) {
+  --offset: 0;
+  z-index: 4;
+}
+.child:nth-child(2) {
+  --offset: 1;
+  z-index: 3;
+}
+.child:nth-child(3) {
+  --offset: 2;
+  z-index: 2;
+}
+.child:nth-child(4) {
+  --offset: 3;
+  z-index: 1;
+}
+.child:nth-child(5) {
+  --offset: 4;
+  z-index: 0;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage(resize, *);
+  }
+</script>
+
+
+</head>
+
+<body translate=no >
+  <div class=container>
+  <div class=card style=--cards:5>
+    <div class=child>
+      <h2>Why do I need a will</h2>
+      <p>5 articles</p>
+    </div>
+    <div class=child></div>
+    <div class=child></div>
+    <div class=child></div>
+    <div class=child></div>
+  </div>
+  <div class=card style=--cards:3>
+    <div class=child>
+      <h2>How to choose who inherits your estate</h2>
+      <p>3 articles</p>
+    </div>
+    <div class=child></div>
+    <div class=child></div>
+  </div>
+  <div class=card style=--cards:2>
+    <div class=child>
+      <h2>What happens when you die</h2>
+      <p>2 articles</p>
+    </div>
+    <div class=child></div>
+  </div>
+  <div class=card style=--cards:4>
+    <div class=child>
+      <h2>How to choose guardians</h2>
+      <p>4 articles</p>
+    </div>
+    <div class=child></div>
+    <div class=child></div>
+    <div class=child></div>
+  </div>
+  <div class=card style=--cards:4>
+    <div class=child>
+      <h2>Why you've been disinherited</h2>
+      <p>4 articles</p>
+    </div>
+    <div class=child></div>
+    <div class=child></div>
+    <div class=child></div>
+  </div>
+  <div class=card style=--cards:3>
+    <div class=child>
+      <h2>How to commit fraud, legally</h2>
+      <p>3 articles</p>
+    </div>
+    <div class=child></div>
+    <div class=child></div>
+  </div>
+  <div class=card style=--cards:5>
+    <div class=child>
+      <h2>Stay together for the kids</h2>
+      <p>5 articles</p>
+    </div>
+    <div class=child></div>
+    <div class=child></div>
+    <div class=child></div>
+  </div>
+  <div class=card style=--cards:3>
+    <div class=child>
+      <h2>Picking music for your funeral</h2>
+      <p>3 articles</p>
+    </div>
+    <div class=child></div>
+    <div class=child></div>
+  </div>
+</div>
+  
+  
+  
+  
+
+</body>
+
+</html>
