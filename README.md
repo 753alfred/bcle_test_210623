@@ -15,3 +15,8 @@ https://codepen.io/amosby/pen/bjGjKw
 https://codepen.io/csb324/pen/MXVaLj
 https://codepen.io/makaveli-dev-web/pen/Roxoqa
 https://codepen.io/trevoreyre/pen/bRrrEx
+
+장고 관리자 화면 템플릿 위치
+- 윈도우 : c:\PythonXX\Lib\site-packages\django\contrib\admin\templates\
+- 리눅스 : /user/lib/pythonXX/site-packages/django/contrib/admin/templates/
+- 맥 : /Library/Python/X.X/site-packages/django/contrib/admin/templates/
